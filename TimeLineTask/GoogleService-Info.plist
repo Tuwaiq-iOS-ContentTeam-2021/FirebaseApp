@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>192678750141-ubkttp3j316ekmppevba2n058oqahmta.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.192678750141-ubkttp3j316ekmppevba2n058oqahmta</string>
+	<key>API_KEY</key>
+	<string>AIzaSyB0DhuSVQGbSt4VWheexr9bapWVWdzCeKU</string>
+	<key>GCM_SENDER_ID</key>
+	<string>192678750141</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>Aldanah.TimeLineTask</string>
+	<key>PROJECT_ID</key>
+	<string>time-line-end-week9</string>
+	<key>STORAGE_BUCKET</key>
+	<string>time-line-end-week9.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:192678750141:ios:a2ab9645b79dcf418a94d4</string>
+</dict>
+</plist>
