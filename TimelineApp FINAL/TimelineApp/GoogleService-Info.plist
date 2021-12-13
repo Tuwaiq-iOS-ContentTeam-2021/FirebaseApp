@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>757164157884-00roq93b0bfi9ot6grbevrmkb6ruvq2b.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.757164157884-00roq93b0bfi9ot6grbevrmkb6ruvq2b</string>
+	<key>API_KEY</key>
+	<string>AIzaSyABcs1KamHZjxQFUEbEvRcphTIXRRr8GEA</string>
+	<key>GCM_SENDER_ID</key>
+	<string>757164157884</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>-45tg.TimelineApp</string>
+	<key>PROJECT_ID</key>
+	<string>timelineapp-3f532</string>
+	<key>STORAGE_BUCKET</key>
+	<string>timelineapp-3f532.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false/>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false/>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true/>
+	<key>IS_GCM_ENABLED</key>
+	<true/>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true/>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:757164157884:ios:38cbead5ebcb4847bf99b9</string>
+</dict>
+</plist>
