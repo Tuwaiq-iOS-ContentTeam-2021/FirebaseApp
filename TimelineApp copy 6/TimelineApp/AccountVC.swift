@@ -7,9 +7,8 @@
 
 import UIKit
 import Firebase
-let cu = Auth.auth().currentUser
 class AccountVC: UIViewController {
- 
+   let cu = Auth.auth().currentUser
     
     @IBOutlet weak var backView2: UIView!
     @IBOutlet weak var backView: UIView!
@@ -37,7 +36,7 @@ class AccountVC: UIViewController {
         
         let vc = self.storyboard?.instantiateViewController(withIdentifier: "fakeAccountVCid") as! fakeAccountVC
              vc.modalPresentationStyle = .fullScreen
-             present(vc, animated: false, completion: nil)
+             present(vc, animated: true, completion: nil)
         
         
         

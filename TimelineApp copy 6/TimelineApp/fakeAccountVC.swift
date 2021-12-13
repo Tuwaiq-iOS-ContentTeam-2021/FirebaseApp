@@ -10,14 +10,11 @@ import Firebase
 class fakeAccountVC: UIViewController {
     @IBOutlet weak var oView: UIView!
     @IBOutlet weak var accImg: UIImageView!
-    @IBOutlet weak var name: UILabel!
+    
     @IBOutlet weak var wView: UIView!
     @IBOutlet weak var gView: UIView!
-    @IBOutlet weak var accButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-        accButton.isEnabled = false
-        name.text = cu?.displayName
         oView.layer.cornerRadius = 50
         gView.layer.cornerRadius = 30
         wView.layer.cornerRadius = 30
@@ -35,7 +32,7 @@ class fakeAccountVC: UIViewController {
             
             let vc = self.storyboard?.instantiateViewController(withIdentifier: "ViewControllerid") as! ViewController
                  vc.modalPresentationStyle = .fullScreen
-                 present(vc, animated: false, completion: nil)
+                 present(vc, animated: true, completion: nil)
         }catch{
             
             print("error")
