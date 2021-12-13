@@ -6,7 +6,6 @@
 //
 
 
-//we will have just 1 object throgh the app, to struct or to save the data.
 import Foundation
 import SystemConfiguration
 import UIKit
@@ -16,7 +15,7 @@ class DataManager {
     static var shared = DataManager()
 
     private init() {}
-    //isReachable func: lets know about the connection
+    //isReachable func: let us know about the connection
     // MARK: - Reachability
     public var isReachable: Bool {
         var zeroAddress = sockaddr_in()

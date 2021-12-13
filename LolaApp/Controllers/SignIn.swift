@@ -81,7 +81,6 @@ class SignIn: UIViewController {
         
     }
     
-    
     //    func showActivityIndicator() {
     //        self.activityIndicator.startAnimating()
     //        self.vwActivityIndicator.isHidden = false
@@ -117,24 +116,18 @@ class SignIn: UIViewController {
     
     @IBAction func btnForgotPasswordClicked() {
         
-        if let emailText = self.lblEmail.text {
-            
-            if ( emailText.trimmingCharacters(in: .whitespacesAndNewlines) != "" ) {
-            Auth.auth().sendPasswordReset(withEmail: emailText) { error in
-                if (error != nil) {
-                    self.showAlert(title: "Bad Email", message: error?.localizedDescription, hideAfter: 9.0)
-                }else{
+        if self.lblEmail.text!.trimmingCharacters(in: .whitespacesAndNewlines) != "" {
+            Auth.auth().sendPasswordReset(withEmail: self.lblEmail.text!) { error in
+                    if error != nil {
+                        self.showAlert(title: "Bad Email", message: error?.localizedDescription, hideAfter: 5.0)
+                    } else {
+                        //..
+                    }
                 }
+            } else {
+                self.showAlert(title: "Bad Email", message: "Please write a valid email address and then click forget password", hideAfter: 5.0)
             }
-            }else{
-                self.showAlert(title: "Bad Email", message: "Please write a valid email address and then click forget password", hideAfter: 9.0)
-            }
-            
-        }
-        
     }
-    
-    
     
     
 }

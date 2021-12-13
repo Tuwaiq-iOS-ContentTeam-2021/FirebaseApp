@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.crop.circle.fill.badge.plus" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="6hX-JX-1VG">
-                                <rect key="frame" x="155.5" y="208" width="101.5" height="99.5"/>
+                                <rect key="frame" x="155.5" y="235" width="101.5" height="99.5"/>
                                 <color key="tintColor" systemColor="systemGrayColor"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -28,7 +28,7 @@
                                 </userDefinedRuntimeAttributes>
                             </imageView>
                             <button clipsSubviews="YES" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jbi-Em-fhP">
-                                <rect key="frame" x="157" y="208" width="100" height="100"/>
+                                <rect key="frame" x="157" y="235" width="100" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="QNz-Vm-Z4B"/>
                                     <constraint firstAttribute="width" constant="100" id="nXh-HE-EGs"/>
@@ -41,8 +41,8 @@
                                     <action selector="selectMediaForUploading:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cGO-Ii-Lzc"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select image" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="03B-n6-Adv">
-                                <rect key="frame" x="158" y="316" width="98.5" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="03B-n6-Adv">
+                                <rect key="frame" x="205" y="343" width="4.5" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -109,7 +109,7 @@
                             <constraint firstItem="d8v-Bt-rS9" firstAttribute="top" secondItem="XsH-dK-y7J" secondAttribute="bottom" constant="18" id="Z2h-2o-Zgn"/>
                             <constraint firstItem="6hX-JX-1VG" firstAttribute="top" secondItem="jbi-Em-fhP" secondAttribute="top" id="eUQ-mx-Glz"/>
                             <constraint firstItem="sjZ-Pl-BV2" firstAttribute="top" secondItem="1Ir-QW-jMb" secondAttribute="bottom" constant="4" id="jJp-TD-sFP"/>
-                            <constraint firstItem="0lo-OV-gvK" firstAttribute="top" secondItem="03B-n6-Adv" secondAttribute="bottom" constant="47" id="jq4-gs-I1z"/>
+                            <constraint firstItem="0lo-OV-gvK" firstAttribute="top" secondItem="03B-n6-Adv" secondAttribute="bottom" constant="20" id="jq4-gs-I1z"/>
                             <constraint firstItem="0lo-OV-gvK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="l4Y-pK-L0I"/>
                             <constraint firstItem="XsH-dK-y7J" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="lXM-KR-PAu"/>
                             <constraint firstItem="sjZ-Pl-BV2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="wL7-id-fu3"/>
@@ -365,7 +365,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kSy-dp-vHi" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3250.7246376811595" y="109.82142857142857"/>
+            <point key="canvasLocation" x="3281" y="110"/>
         </scene>
         <!--Create PostVC-->
         <scene sceneID="dH7-a7-AAA">
@@ -465,7 +465,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Mxv-V7-AnI"/>
+        <segue reference="chR-LF-Wq2"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="person.circle.fill" catalog="system" width="128" height="121"/>

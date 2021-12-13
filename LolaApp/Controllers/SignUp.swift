@@ -29,8 +29,9 @@ class SignUp: UIViewController {
     override func viewDidLoad() {
         loginBtnOutlet.titleLabel?.textAlignment = .left
         loginBtnOutlet.titleLabel?.font = UIFont.systemFont(ofSize: 14)
-        imgVwProfile.layer.cornerRadius = imgVwProfile.frame.size.width / 2
+        imgVwProfile.layer.cornerRadius = imgVwProfile.frame.size.width/2
         imgVwProfile.clipsToBounds = true
+        imgVwProfile.contentMode = .scaleAspectFill
     }
     
     @IBAction func btnProfileImageClicked() {
@@ -118,7 +119,7 @@ class SignUp: UIViewController {
             
         }
         else{
-            self.showAlert(title: "Warning", message: "Fill out all the Fields before signing up", hideAfter: 9.0)
+            self.showAlert(title: "Warning", message: "Fill out all the Fields before signing up", hideAfter: 4.0)
         }
     }
     

@@ -9,7 +9,6 @@
 import UIKit
 import Firebase
 
-// Some of the constants value used in the Proj.
 let firebaseManager = FirebaseManager.shared
 let dataManager = DataManager.shared
 let firebaseAuth = Auth.auth()

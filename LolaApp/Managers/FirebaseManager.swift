@@ -18,7 +18,6 @@ typealias FirebaseCoinsCount = (_ key: String, _ value: Double ) -> Void
 
 class FirebaseManager: NSObject {
     
-
     var databaseQueryRef: DatabaseQuery?
     var databaseRef : DatabaseReference {
         return Database.database().reference()
@@ -41,8 +40,8 @@ class FirebaseManager: NSObject {
     override fileprivate init() {
     }
     
-    
-    func authenticate(id:String, password:String, completion:AuthResultCallback? = nil) {
+    //login
+    func authenticate(id: String, password: String, completion: AuthResultCallback? = nil) {
         firebaseAuth.signIn(withEmail: id, password: password, completion: { user, error in
             if let handler = completion{
                 DispatchQueue.main.async {
@@ -54,8 +53,8 @@ class FirebaseManager: NSObject {
     }
     
     
-    
-    func register(id:String, password:String, completion:AuthResultCallback? = nil) {
+    //signup
+    func register(id: String, password: String, completion: AuthResultCallback? = nil) {
         firebaseAuth.createUser(withEmail: id, password: password, completion: { user, error in
             if let handler = completion{
                 DispatchQueue.main.async {
@@ -67,7 +66,7 @@ class FirebaseManager: NSObject {
     
     
     
-    func changeUserStatusForSignUp(post : [AnyHashable : Any], for userid: String, withCompletion handler: FirebaseCompletion? = nil) {
+    func changeUserStatusForSignUp(post : [AnyHashable: Any], for userid: String, withCompletion handler: FirebaseCompletion? = nil) {
 
            Database.database().reference().child("Users").child(userid).updateChildValues(post)
            { (error, ref) in
@@ -78,7 +77,7 @@ class FirebaseManager: NSObject {
        }
     
     
-    
+    //get user data
     func getUserInfo(forPerson: String, onUpdate: FirebaseObserverCompletion? = nil) {
         let databaseReference = Database.database().reference().child("Users").child(forPerson)
         databaseReference.observeSingleEvent(of: .value, with: { snapshot in
@@ -96,8 +95,7 @@ class FirebaseManager: NSObject {
     }
     
     
-    
-    
+    //post
     func addPost(post : [AnyHashable : Any], withCompletion handler: FirebaseCompletion? = nil) {
         
         self.databaseRef.child("Posts").childByAutoId().updateChildValues(post)
@@ -108,8 +106,7 @@ class FirebaseManager: NSObject {
         }
     }
     
-    
-
+    //view timeline
     func getPosts(onUpdate: FirebaseObserverCompletion? = nil) {
 
         self.databaseQueryRef = self.databaseRef.child("Posts")

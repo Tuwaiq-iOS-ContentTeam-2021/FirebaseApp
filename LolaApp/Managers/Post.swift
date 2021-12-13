@@ -61,6 +61,5 @@ class Post {
         }
         return dic
     }
-    
 
 }

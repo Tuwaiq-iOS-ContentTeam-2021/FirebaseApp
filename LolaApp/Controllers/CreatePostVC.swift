@@ -11,9 +11,6 @@ import UIKit
 class CreatePostVC: UIViewController, UITextViewDelegate {
     
     @IBOutlet weak var txtPost: GrowingTextView!
-    @IBOutlet weak var field: GrowingTextView!
-
-    
     //    @IBOutlet  var btnPostBottomConstraint: NSLayoutConstraint!
     
     override func viewDidLoad() {
@@ -46,15 +43,15 @@ class CreatePostVC: UIViewController, UITextViewDelegate {
                                               "email" : FirebaseManager.shared.currentUser?.email ?? "dummy@dummy.com",
                                               "uid":FirebaseManager.shared.currentUser?.uid ?? 0,
                                               "timeIntervals": timeInterval]
-            
             firebaseManager.addPost(post: post) { (ref, error) in
                 if error != nil {
                     print(error?.localizedDescription as Any)
+                } else {
+                    self.dismiss(animated: true, completion: nil)
                 }
             }
             
         }
-        dismiss(animated: true, completion: nil)
     }
     
     
@@ -63,8 +60,9 @@ class CreatePostVC: UIViewController, UITextViewDelegate {
     }
     
     
-    
 }
+
+
 
 extension CreatePostVC: GrowingTextViewDelegate {
     
@@ -75,5 +73,6 @@ extension CreatePostVC: GrowingTextViewDelegate {
     }
     
 }
+
 
 
