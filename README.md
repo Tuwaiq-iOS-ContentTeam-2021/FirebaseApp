@@ -1,7 +1,7 @@
 # Timeline App
 This repo contains applications using firebase 
 
-## About the App 
+## About this App 
 This app contains 6 screens:
 - SignUp Screen 
 - SignIn Screen 
@@ -10,7 +10,7 @@ This app contains 6 screens:
 - My Post Screen
 - Profile Screen
 
-## ScreenShots 
+## Screenshots 
 
  ![IMG_0438](https://user-images.githubusercontent.com/92252803/145790048-d9ea69e1-c3af-4c6b-af2b-c1e5026298b9.PNG)
 ![IMG_0440](https://user-images.githubusercontent.com/92252803/145790094-f9b23f38-d920-4e9a-a7c3-52eaa49e338e.PNG)
