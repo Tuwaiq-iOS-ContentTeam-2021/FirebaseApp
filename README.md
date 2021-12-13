@@ -3,17 +3,19 @@
 
 Requirements:
 
-1- the users able to signUP
+1- the users able to signup
 
-2-the users able to signin
+2-the users able to Login
 
 3- the users able to LogOut
+
+4- rest password 
 
 4-  Create a new post in timeline
 
 5- the user can viewed a timeLine contans all posts writed by the seem user or other users 
 
-6- Alert notification when user write wrong value
+6- Alert Messages when user write wrong value
 
 ----------------------------------------------------------------
 Challengs:
@@ -22,7 +24,7 @@ Challengs:
 
 
 Tools:
-- Firebase service to make Authenticated , Firebase database And Storage
+- Firebase packages contains Firebase services : Firebase Authentication , Firebase store  And Firebase Storage
 
 
 Features:
