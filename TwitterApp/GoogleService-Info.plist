@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>65864225739-esk0re84iqqljungc3uu48kql7ie4f8g.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.65864225739-esk0re84iqqljungc3uu48kql7ie4f8g</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDbqpRl6PpafjHCzrEAbYyvUPlwNlEzW5s</string>
+	<key>GCM_SENDER_ID</key>
+	<string>65864225739</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>Nora.TwitterApp</string>
+	<key>PROJECT_ID</key>
+	<string>twitterapp-c3c7f</string>
+	<key>STORAGE_BUCKET</key>
+	<string>twitterapp-c3c7f.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:65864225739:ios:17c4297509f2f4ddb99c4e</string>
+</dict>
+</plist>
