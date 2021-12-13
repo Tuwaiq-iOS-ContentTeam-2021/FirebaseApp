@@ -22,7 +22,7 @@ This app contains 6 screens:
 ![IMG_0452](https://user-images.githubusercontent.com/92252803/145790249-7514f10b-35e0-4838-a81e-7b7d22cd866b.PNG)
 
 ## Tools 
-- <a href="https://appicon.co" target="_blank">AppIcon</a> : Generate diffrent sizes of the same icon.
+- <a href="https://appicon.co" target="_blank">AppIcon</a> : Generate different sizes of the same icon.
 
 ## Sources 
 - <a href="https://stackoverflow.com/questions/39768600/how-to-programmatically-set-action-for-barbuttonitem-in-swift-3" target="_blank">Stack Overflow</a> :  Set action for barButtonItem in swift programmatically.
