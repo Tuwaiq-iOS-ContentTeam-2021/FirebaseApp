@@ -1,5 +1,5 @@
 # FirebaseApp 
-To tryout our app you can simply write the following code in the terminal git clone https://github.com/RayanEssam/CameraApp.git , or download it as zip folder.
+To tryout our app you can simply write the following code in the terminal git clone https://github.com/RayanEssam/FirebaseApp.git , or download it as zip folder.
 
 ## About the App 
 This app contains 3 main screens :
