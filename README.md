@@ -1,2 +1,2 @@
-# FirebaseApp
-This repo contains applications using firebase 
+## FirebaseApp - Blink
+
