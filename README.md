@@ -1,3 +1,6 @@
+
+
+
 # Timeline App
 This repo contains applications using firebase 
 
@@ -28,3 +31,5 @@ This app contains 6 screens:
 - <a href="https://stackoverflow.com/questions/39768600/how-to-programmatically-set-action-for-barbuttonitem-in-swift-3" target="_blank">Stack Overflow</a> :  Set action for barButtonItem in swift programmatically.
 - <a href="https://developer.apple.com/documentation/uikit/uibarbuttonitem" target="_blank">Apple Developer Documentation </a> : Customizing Appearance.
 - <a href="https://firebase.google.com/docs/storage/ios/download-files" target="_blank">Firebase Developer Documentation </a> : Download Files.
+
+> Thanks for Rayan Taj 
