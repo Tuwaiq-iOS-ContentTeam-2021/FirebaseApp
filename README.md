@@ -11,12 +11,12 @@
 Developed using xCode 13.0 and Swift 5
 
 ## 3rd party dependencies, Libraries used
-- [Firebase](https://github.com/firebase/quickstart-ios)
+- [Firebase](https://github.com/firebase/quickstart-ios) 
 Email Authentication
 Realtime Database
 Storage
-- ![Catchy](https://github.com/Sadmansamee/CachyKit)
-- ![GrowingTextView](https://github.com/KennethTsang/GrowingTextView)
+- [Catchy](https://github.com/Sadmansamee/CachyKit)
+- [GrowingTextView](https://github.com/KennethTsang/GrowingTextView)
 
 ## A a tour inside the app:
 https://drive.google.com/file/d/1F5n4YrHiUdykFLtMAKuQu0hoHgitvTZI/view?usp=sharing
