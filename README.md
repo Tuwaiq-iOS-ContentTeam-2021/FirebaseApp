@@ -18,7 +18,7 @@ Storage)
 - [Catchy](https://github.com/Sadmansamee/CachyKit)
 - [GrowingTextView](https://github.com/KennethTsang/GrowingTextView)
 
-## A a tour inside the app:
+## A tour inside the app:
 https://drive.google.com/file/d/1F5n4YrHiUdykFLtMAKuQu0hoHgitvTZI/view?usp=sharing
 
 
