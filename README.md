@@ -12,9 +12,9 @@ Developed using xCode 13.0 and Swift 5
 
 ## 3rd party dependencies, Libraries used
 - [Firebase](https://github.com/firebase/quickstart-ios) 
-Email Authentication
-Realtime Database
-Storage
+- Email Authentication
+- Realtime Database
+- Storage
 - [Catchy](https://github.com/Sadmansamee/CachyKit)
 - [GrowingTextView](https://github.com/KennethTsang/GrowingTextView)
 
