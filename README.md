@@ -5,10 +5,10 @@
 
 My application contains :
 
-Sign in 
-Sign up
-Timeline
-profile
+Sign in ,
+Sign up ,
+Timeline ,
+profile ,
 
 
 
