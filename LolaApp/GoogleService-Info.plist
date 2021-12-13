@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>710493775780-66mee553kku7v10ku5v026naq5vmo0i9.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.710493775780-66mee553kku7v10ku5v026naq5vmo0i9</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDeg8wWqOvp27LJo-ofrFdXlEVlgCoaIjk</string>
+	<key>GCM_SENDER_ID</key>
+	<string>710493775780</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.lola.lolaapp</string>
+	<key>PROJECT_ID</key>
+	<string>lola-app-97ad9</string>
+	<key>STORAGE_BUCKET</key>
+	<string>lola-app-97ad9.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:710493775780:ios:4679013c1a147ddf1f0331</string>
+</dict>
+</plist>
