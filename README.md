@@ -1,6 +1,4 @@
 # Timeline App
- using firebase 
-
 This is a timeline application were users can register and then login to post a text , each user has a name and unique id
 
 # Requirements 
