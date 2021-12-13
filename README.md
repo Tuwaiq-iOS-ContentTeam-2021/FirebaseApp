@@ -14,7 +14,7 @@ This app contains 6 screens:
 - Profile Screen
 
 ## Screenshots 
-
+ <img src="https://user-images.githubusercontent.com/92252803/145790048-d9ea69e1-c3af-4c6b-af2b-c1e5026298b9.PNG" alt="" width="300">
  ![IMG_0438](https://user-images.githubusercontent.com/92252803/145790048-d9ea69e1-c3af-4c6b-af2b-c1e5026298b9.PNG)
 ![IMG_0440](https://user-images.githubusercontent.com/92252803/145790094-f9b23f38-d920-4e9a-a7c3-52eaa49e338e.PNG)
 ![IMG_0442](https://user-images.githubusercontent.com/92252803/145790149-ce0aafed-46be-400c-92ed-519a4b514899.PNG)
