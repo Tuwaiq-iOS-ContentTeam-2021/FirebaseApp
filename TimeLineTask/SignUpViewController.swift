@@ -67,12 +67,4 @@ class SignUpViewController: UIViewController {
         creatNewUser()
         addField()
     }
-    
-        override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-            if segue.identifier == "segueSignUp" {
-               let vs =  ProfileViewController()
-                vs.nameUser = user?.displayName ?? ""
-                vs.userName = usernameSignUp.text!
-            }
-        }
 }

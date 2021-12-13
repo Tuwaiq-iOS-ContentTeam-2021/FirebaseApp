@@ -13,33 +13,23 @@ class TimeLineViewController: UIViewController {
 
     
     @IBOutlet weak var tableViewTM: UITableView!
-    var arr:[Users] = []
+//    var arr:[Users] = []
+    var timeLiners:[timeLine] = []
     let db = Firestore.firestore()
     let user = Auth.auth().currentUser
-    
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         tableViewTM.delegate = self
         tableViewTM.dataSource = self
-        getUserFromFB()
-        getData()
+        getContent()
+        tableViewTM.reloadData()
+        
     }
-    func getUserFromFB() {
-        db.collection("Users").getDocuments { SnapShot, error in
-            for id in SnapShot!.documents {
-                print("_______________")
-                print("ID: \(id.documentID)")
-                self.arr.append(Users(name: id.get("name") as! String, username: id.get("username") as! String, email: id.get("email") as! String))
-            }
-            self.tableViewTM.reloadData()
-        }
-    }
-    
-    func getData() {
-        db.collection("Users")
-            .whereField("ID", isEqualTo: user?.uid)
+    func getContent() {
+        db.collection("Content")
+//            .order(by: "time", descending: true)
             .getDocuments(
                 completion: {
                     (qurySnapShot, error) in
@@ -47,30 +37,41 @@ class TimeLineViewController: UIViewController {
                         print(error.localizedDescription)
                     } else {
                         for document in qurySnapShot!.documents {
-                            let data = document.data()
-                            print(data["name"] as? String ?? "value not found")
-//                            let dataName = data["name"] as? String ?? "value not found"
+                            let dataSender = document.get("sender")! as! String
+                               let dataContent = document.get("content")! as! String
+                            let dataUsername = document.get("username")! as! String
                             
+                                let newContent = timeLine(sender: dataSender, username: dataUsername, content: dataContent)
+                                self.timeLiners.append(newContent)
                         }
+                        self.tableViewTM.reloadData()
                     }
                 }
             )
     }
 
+    @IBAction func backButton(_ sender: Any) {
+        performSegue(withIdentifier: "test", sender: self)
+    }
+    
 }
 
 extension TimeLineViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return timeLiners.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as! TimeLineTableViewCell
-        cell.nameLabel.text =
+        cell.userNameLabel.text = timeLiners[indexPath.row].sender
+//        self.sendName = timeLiners[indexPath.row].sender
+        cell.thePostLabel.text = timeLiners[indexPath.row].content
+//        self.sendUser = timeLiners[indexPath.row].content
+
         return cell
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 200
+        return 130
     }
     
 }

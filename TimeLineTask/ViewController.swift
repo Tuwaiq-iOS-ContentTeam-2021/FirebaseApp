@@ -35,12 +35,5 @@ class ViewController: UIViewController {
     @IBAction func SignInButton(_ sender: Any) {
         signInFunc()
     }
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        if segue.identifier == "segueSignIn" {
-//           let vs =  ProfileViewController()
-//            vs.nameUser = user?.displayName ?? ""
-////            vs.userName = usernameSignUp.text!
-//        }
-//    }
 }
 

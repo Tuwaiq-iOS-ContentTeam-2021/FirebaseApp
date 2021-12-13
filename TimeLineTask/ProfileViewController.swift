@@ -10,10 +10,14 @@ import Firebase
 
 class ProfileViewController: UIViewController {
     
+    var arr:[Users] = []
+    let db = Firestore.firestore()
     let user = Auth.auth().currentUser
-    var nameUser = ""
-    var userName = ""
+    var sendName = ""
+    var sendUser = ""
+    
     @IBOutlet weak var resetting: UITextField!
+    
     
     @IBAction func changePassword(_ sender: Any) {
         Auth.auth().currentUser?.updatePassword(to: resetting.text!) { error in
@@ -25,6 +29,30 @@ class ProfileViewController: UIViewController {
                 return
             }
         }
+    }
+    func getData() {
+        db.collection("Users")
+            .whereField("ID", isEqualTo: user?.uid)
+            .getDocuments(
+                completion: { [self]
+                    (qurySnaShot, error) in
+                    if let error = error {
+                        print(error.localizedDescription)
+                    } else {
+                        for document in qurySnaShot!.documents {
+                            let data = document.data()
+                            print(data["name"] as? String ?? "value not found")
+                            let dataName =  document.get("name")! as! String
+                               let dataUName = document.get("username")! as! String
+                               let dataEmail = document.get("email")! as! String
+                                let newUser = Users(name: dataName, username: dataUName, email: dataEmail)
+                            self.sendUser = dataUName
+                            self.sendName = dataName
+                                self.arr.append(newUser)
+                        }
+                    }
+                }
+            )
     }
     @IBAction func logOutButton(_ sender: Any) {
         do {
@@ -39,13 +67,13 @@ class ProfileViewController: UIViewController {
     
     @IBOutlet weak var emailProfile: UILabel!
     @IBOutlet weak var usernameProfile: UILabel!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        nameProfile.text = nameUser
-        usernameProfile.text = userName
-//        usernameProfile.textColor = .blue
         emailProfile.text = user?.email
-        
+        nameProfile.text = sendName
+        usernameProfile.text = sendUser
     }
     
 }
