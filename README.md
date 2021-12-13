@@ -1,7 +1,7 @@
 # Timeline App
 This repo contains applications using firebase 
 
-## About this App 
+## About This App 
 This app contains 6 screens:
 - SignUp Screen 
 - SignIn Screen 
