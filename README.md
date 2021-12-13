@@ -7,8 +7,11 @@ This is a timeline application were users can register and then login to post a 
 The user shall be able to Sign Up. ✅
 
 The user shall be able to Log In. ✅
+
 The user shall be able to post [text].✅
+
 The user shall be able to view all the posts from different users (Timeline) ✅
+
 Use firebase for this project ✅
 
 # App preview 
