@@ -1,5 +1,6 @@
 # FirebaseApp
-This repo contains applications using firebase 
+
+
 Requirements:
 1- the users able to signUP
 2-the users able to signin
