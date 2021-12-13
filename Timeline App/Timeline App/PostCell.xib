@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CellID" rowHeight="113" id="KGk-i7-Jjw" customClass="PostCell" customModule="Timeline_App" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="350" height="113"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="350" height="113"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DJ0-kE-ExL">
+                        <rect key="frame" x="0.0" y="0.0" width="350" height="33"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="33" id="5gi-ns-3nt"/>
+                            <constraint firstAttribute="width" constant="350" id="xw1-D1-Bis"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="R8b-ea-nr5">
+                        <rect key="frame" x="0.0" y="41" width="350" height="67"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="350" id="2sn-A9-j94"/>
+                            <constraint firstAttribute="height" constant="67" id="N3A-LC-y4P"/>
+                        </constraints>
+                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                        <color key="textColor" systemColor="labelColor"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    </textView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="DJ0-kE-ExL" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="1ln-tm-HkQ"/>
+                    <constraint firstAttribute="trailing" secondItem="R8b-ea-nr5" secondAttribute="trailing" id="4hM-Ye-Bgt"/>
+                    <constraint firstItem="DJ0-kE-ExL" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="gJ7-eJ-Ijw"/>
+                    <constraint firstAttribute="trailing" secondItem="DJ0-kE-ExL" secondAttribute="trailing" id="imR-35-O5V"/>
+                    <constraint firstAttribute="bottom" secondItem="R8b-ea-nr5" secondAttribute="bottom" constant="5" id="kE8-h0-0fC"/>
+                    <constraint firstItem="R8b-ea-nr5" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="s9R-z9-ezO"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="emailLabel" destination="DJ0-kE-ExL" id="9V4-wV-6Id"/>
+                <outlet property="tweetTextView" destination="R8b-ea-nr5" id="3Uy-8G-bw1"/>
+            </connections>
+            <point key="canvasLocation" x="159.42028985507247" y="125.55803571428571"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
