@@ -11,7 +11,7 @@
 Developed using xCode 13.0 and Swift 5
 
 ## 3rd party dependencies, Libraries used
-- ![Firebase](https://github.com/firebase/quickstart-ios)
+- [Firebase](https://github.com/firebase/quickstart-ios)
 Email Authentication
 Realtime Database
 Storage
