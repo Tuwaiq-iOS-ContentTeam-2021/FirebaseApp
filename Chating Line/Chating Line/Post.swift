@@ -16,9 +16,7 @@ class Post: UIViewController {
     @IBOutlet weak var tweetPost: UITextView!
     
     
-    //    var sendNameUser:String?
-    //    var sendUserDesc:String?
-    //    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,8 +29,7 @@ class Post: UIViewController {
                 "post" : tweetPost.text!,
                 "userid" : userId,
                 "uemail" : useremail,
-               
-                
+                "date" : Date().timeIntervalSinceNow
             ])
         { (error) in
             if let e = error {
@@ -46,6 +43,7 @@ class Post: UIViewController {
         
         
     }
+    
 }
 
 

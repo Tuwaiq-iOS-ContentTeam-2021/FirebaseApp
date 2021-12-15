@@ -10,7 +10,6 @@ import Firebase
 import SwiftUI
 
 class restPassword: UIViewController {
-    
     @IBOutlet weak var newpassword: UITextField!
     
     override func viewDidLoad() {
@@ -37,4 +36,5 @@ class restPassword: UIViewController {
             
         }
     }
+   
 }

@@ -25,7 +25,9 @@ class TimeLine: UIViewController,UITableViewDelegate,UITableViewDataSource {
     
     
     func getUserFromfirestore(){
-        firestoreURL.collection("Post").getDocuments { querySnapshot, err in
+        firestoreURL.collection("Post")
+            .order(by: "date")
+            .getDocuments { querySnapshot, err in
             if let err = err {
                 print("error get document: \(err)")
             } else {
@@ -62,8 +64,7 @@ extension TimeLine {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 200
     }
+
 }
-
-
 
 
