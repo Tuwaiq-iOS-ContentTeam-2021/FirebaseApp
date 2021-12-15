@@ -7,12 +7,8 @@ class PostPage: UIViewController , UIImagePickerControllerDelegate, UINavigation
     
     @IBOutlet weak var textView: UITextView!
     @IBOutlet weak var userImage: UIImageView!
-    var imagePath = "no image" //
     
-
-    var ref: DatabaseReference!
-    let userID = Auth.auth().currentUser?.uid
-
+    let db = Firestore.firestore() // refrence
     var imagePicker: UIImagePickerController!
     
     override func viewDidLoad() {
@@ -20,52 +16,24 @@ class PostPage: UIViewController , UIImagePickerControllerDelegate, UINavigation
         imagePicker = UIImagePickerController()
         imagePicker.delegate = self
     }
-
-    // post , set values to firebase
-    @IBAction func post(_ sender: Any) {
-        var s = SignInPage() //$$
-        ref = Database.database().reference()
-        var postMsg =
-        [
-            "userUID" : userID! ,
-            "text" : textView.text!,
-            "imagePath" : imagePath
-        ]
-        // childByAutoId() every time i create nod with diffrernt id
-        ref.child("Posts").childByAutoId().setValue(postMsg)
-        uploadImage() // to firebase
-        var imagePath = "no image"
-        performSegue(withIdentifier: "postToHome", sender: nil)
-    }
     
+    // to firebase
     @IBAction func newpost(_ sender: Any) {
-        // ^^^^^^^^^^^^^^^^^^^^^^^^^
-        let db = Firestore.firestore() // refrence
-//        let userID = Auth.auth().currentUser?.uid
-
-        db.collection("Users")
-            .document("user")
-            .setData(
-                [
-                    "userID" : userID!,
-                    "email" : Auth.auth().currentUser?.email,
-                    "text" : textView.text!
-                ]
-            )
-        {
-            (error) in
-            if error == nil{
+        db.collection("Post").addDocument(data: [
+            "email" : Auth.auth().currentUser?.email,
+            "words": textView.text,
+        ]){ (error) in
+            if let error = error{
+                print(error.localizedDescription)
+            }else{
                 print("Decument has been created")
-            } else{
-                print(error?.localizedDescription)
+                
             }
         }
-        // ^^^^^^^^^^^^^^^^^^^^^^^^^
     }
     
-    
     //----------------------------------------
-
+    
     // upload image to firebase
     func uploadImage(){
         let imageName = "\(UUID().uuidString).png"
@@ -82,7 +50,7 @@ class PostPage: UIViewController , UIImagePickerControllerDelegate, UINavigation
             }
         }
     }
-   //----------------------------------------
+    //----------------------------------------
     
     // camera
     @IBAction func camera(_ sender: Any) {
@@ -100,15 +68,13 @@ class PostPage: UIViewController , UIImagePickerControllerDelegate, UINavigation
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         if let image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage{
             userImage.image = image
-//            uploadImage(image: image)
-    }
+        }
         dismiss(animated: true, completion: nil)
-//        imagePicker.dismiss(animated: true, completion: nil)
     }
     
     // hide keyboard
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.endEditing(true)
     }
-
+    
 }

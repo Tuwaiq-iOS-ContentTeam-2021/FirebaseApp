@@ -17,7 +17,7 @@ class ResetEmail: UIViewController {
     
     @IBAction func update2(_ sender: Any) {
         Auth.auth().currentUser?.updateEmail(to: emailText.text!) { error in
-            if error == nil{ // no errors
+            if error == nil{ 
                 print("email is updated sucssfully")
             }else{
                 print(error?.localizedDescription)

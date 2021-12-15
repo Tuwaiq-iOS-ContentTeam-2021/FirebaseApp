@@ -378,13 +378,6 @@
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m5T-si-4u6">
                                                     <rect key="frame" x="8" y="8" width="398" height="111"/>
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="@UserAccount" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WPk-S0-0PB">
-                                                            <rect key="frame" x="67" y="30" width="281" height="21"/>
-                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                            <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
                                                         <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="this is my post ......" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="blm-RX-Q1I">
                                                             <rect key="frame" x="8" y="61" width="230" height="32"/>
                                                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -403,11 +396,8 @@
                                                             <state key="normal" image="photo" catalog="system">
                                                                 <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="78"/>
                                                             </state>
-                                                            <connections>
-                                                                <action selector="imageAction:" destination="kVX-p4-sy1" eventType="touchUpInside" id="2ZI-E1-lz4"/>
-                                                            </connections>
                                                         </button>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bxq-iW-dd7">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bxq-iW-dd7">
                                                             <rect key="frame" x="67" y="8" width="281" height="21"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
@@ -453,10 +443,8 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="myEmail" destination="WPk-S0-0PB" id="XY1-8h-suX"/>
-                                            <outlet property="myImage1" destination="GHG-89-NN7" id="8YF-jt-qgq"/>
-                                            <outlet property="myName" destination="Bxq-iW-dd7" id="qNz-97-mcy"/>
-                                            <outlet property="myPostText" destination="blm-RX-Q1I" id="M5S-0j-Vxr"/>
+                                            <outlet property="email" destination="Bxq-iW-dd7" id="uYw-0n-8vC"/>
+                                            <outlet property="words" destination="blm-RX-Q1I" id="l8q-JL-0KI"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -559,7 +547,7 @@
                                     <fontDescription key="titleFontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="22"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="post:" destination="kVX-p4-sy1" eventType="touchUpInside" id="AOX-LL-FfW"/>
+                                    <action selector="newpost:" destination="kVX-p4-sy1" eventType="touchUpInside" id="Uq4-pZ-lmK"/>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="photo" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="OVM-xv-2V7">
@@ -597,7 +585,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="plus.circle" catalog="system" id="bW5-nC-Ymt"/>
                     <connections>
-                        <outlet property="textView" destination="Hlk-sc-fcW" id="ah4-CH-Q9x"/>
+                        <outlet property="textView" destination="Hlk-sc-fcW" id="HuV-4U-By7"/>
                         <outlet property="userImage" destination="OVM-xv-2V7" id="k2w-S6-NfI"/>
                         <segue destination="yj9-oI-hHg" kind="show" identifier="postToHome" id="Zvw-Fl-Btp"/>
                     </connections>
